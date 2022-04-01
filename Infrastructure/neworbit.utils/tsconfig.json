@@ -1,0 +1,12 @@
+{
+    "extends": "../tsconfig.base.json",
+    "compilerOptions": {
+        "noEmitOnError": true,
+        "declaration": true,
+        "composite": true,
+        "rootDir": "../"
+    },
+    "files": [
+        "index.ts"
+    ]
+}

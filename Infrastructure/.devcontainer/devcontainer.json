@@ -1,0 +1,18 @@
+{
+    "name": "Pulumi",
+    "build": {
+        "dockerfile": "Dockerfile",
+    },
+    "extensions": [
+        "ms-azuretools.vscode-docker"
+    ],
+    // Use 'postCreateCommand' to run commands after the container is created.
+    // "postAttachCommand": "",
+    // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+    // "remoteUser": "vscode"
+    "mounts": [
+        "source=${localEnv:HOME}${localEnv:USERPROFILE}/.azure,target=/root/.azure,type=bind",
+        "source=neworbit-pulumi-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume",
+        "source=neworbit-pulumi-plugins,target=/root/.pulumi/plugins,type=volume"
+    ]
+}

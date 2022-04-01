@@ -1,0 +1,11 @@
+{
+    "terminal.integrated.profiles.linux": {
+        "pulumi-bash": {
+            "path": "bash",
+            "args": ["--init-file", "${workspaceFolder}/devops/PulumiLogin.sh"],
+            "overrideName": true
+        },
+        "bash": null
+    },
+    "terminal.integrated.defaultProfile.linux": "pulumi-bash"
+}

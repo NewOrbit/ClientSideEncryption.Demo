@@ -1,0 +1,15 @@
+{
+    "extends": "../tsconfig.base.json",
+    "compilerOptions": {
+        "incremental": true,
+        "rootDir": "../"
+    },
+    "files": [
+        "index.ts"
+    ],
+    "references": [
+        {
+            "path": "../neworbit.utils"
+        }
+    ]
+}

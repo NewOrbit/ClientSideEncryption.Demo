@@ -1,0 +1,12 @@
+config:
+  azure:environment: public
+  azure:location: northeurope
+  environment:meta:
+    environmentName: live
+    environmentType: Live
+    locationAbbreviation: eun
+    locationName: northeurope
+    shortSystemName: <systemName>
+  environment:owner: <OwnerName>
+  environment:tags:
+    scale: Normal

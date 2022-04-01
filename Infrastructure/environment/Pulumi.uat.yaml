@@ -1,0 +1,14 @@
+secretsprovider: azurekeyvault://flpdb-pulumi-uks-kv.vault.azure.net/keys/pulumiKey
+encryptedkey: cXp6c1ctZFh3MVlpMVVWellNWDVNQzM0NU52NVhjdzlhb0t1cWxKVzU2aklPTDNfQ1g0Q2duRDZ3UERoejJ4anBlSUVPZzBiLWR0R2daMER2ZjFsbnBSZ1RoVzlSVDQ2VmtnYnM0NE9MMlRmN0NKTFZIbG5HRkVORVd6eS1QanlocXNkbUhLLVpaNEg0aHFxa1U2d1RCSVRUNHRKTjh5c2ZHd3FLVjR5bU1FS2sxbGRWU0FzdzJzMFVNM2dfb1ZTVVpxckRxX2hRRm95NGtLTlp0d2FsQ20tYkNNX1VkaDRWWEtrZ0FrWDFXdDV2NktMWEk1RENtUFVaOVp6MkpkaVdaNWlNVGNCekh5LXk2V1I4amV4Sy12dU1ZUGZERW1qZ1dQdEZLWkFER0p0YVB0V09sNks0S3drbzlaWEFnUGNZNHV4TDhRS21lalNBM1FzVlptenNR
+config:
+  azure:environment: public
+  azure:location: northeurope
+  environment:meta:
+    environmentName: uat
+    environmentType: Testing
+    locationAbbreviation: eun
+    locationName: northeurope
+    shortSystemName: flpdb
+  environment:owner: Frans
+  environment:tags:
+    scale: Temporary

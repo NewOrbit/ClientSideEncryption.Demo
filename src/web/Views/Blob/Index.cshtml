@@ -1,0 +1,30 @@
+﻿@model Azure.Pageable<Azure.Storage.Blobs.Models.BlobItem>
+@{
+    ViewData["Title"] = "Blobs";
+}
+
+
+@using (Html.BeginForm("PostFile", "Blob", new {}, FormMethod.Post, false, new { enctype = "multipart/form-data" } ))
+{
+    <input type="file" name="file" />
+    <input type="submit" value="OK" />
+}
+<div></div>
+<hr />
+<div></div>
+<table>
+    <head>
+        <tr>
+            <td>Name</td>
+            <td>Encryption</td>
+        </tr>
+    </head>
+    @foreach (var blob in Model)
+    {
+        <tr>
+            <td>@Html.ActionLink(blob.Name, "GetBlob", "Blob", new { name = blob.Name } ) </td>
+            <td>@(blob.Metadata.ContainsKey("encryptiondata") ? blob.Metadata["encryptiondata"] : "Not encrypted")</td>
+        </tr>
+    }
+</table>
+
